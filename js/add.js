@@ -46,7 +46,8 @@ gsap.fromTo('.header_text__polosa-vertical',{ height: indexJs*1.7 },{height: 0,s
 gsap.fromTo('.header_shkala', { width: "101vw" }, {width: "0vw",duration: 1.8,delay: 2.2,ease: 'power2.out',scrollTrigger: {trigger: '.header_img___balloon-blue-clone',start: '0',end: 4 * vh,scrub: true,
 onUpdate: function() {if (parseFloat(headerShkala.style.width) == 0) {article();}}}});
 gsap.fromTo('.header_img__sun-clone',{y: 0,x:0,opacity:1},{y:-450,x:300,opacity:0,scrollTrigger:{trigger:'.header_img___balloon-blue-clone',start: '0',end:2.8*vh,scrub:true}})
-gsap.fromTo('.header_blur__sun',{ opacity:1 },{opacity:0,scrollTrigger:{trigger:'.header_img___balloon-blue-clone',start: '0',end:1.8*vh,scrub:true}});document.body.style.overflow = 'auto';},5000)}, 4000);
+gsap.fromTo('.header_blur__sun',{ opacity:1 },{opacity:0,scrollTrigger:{trigger:'.header_img___balloon-blue-clone',start: '0',end:1.8*vh,scrub:true}});
+document.body.style.overflow = 'auto';document.querySelector('.start').style.display ='none'},5000)}, 4000);
         
 //COULS---------------------------------------------------------------------------
 gsap.fromTo('.clouds_right0',{ y:-50,x:0},{y:-50,x:indexJs*55,scrollTrigger:{trigger:'.header_img___balloon-blue-clone',start: 2.25*vh,end:4.25*vh,scrub:true}})
