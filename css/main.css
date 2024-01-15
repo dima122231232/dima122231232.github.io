@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700&family=Montserrat:wght@900&family=Playfair+Display:ital,wght@1,900&family=Roboto+Slab:wght@300;700;900&display=swap');
+* {
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+.header__osnova .header__text .header_img___balloon-blue .header_img__sun .header_img__sun-clone .header_blur__balloon-purple .header_img___balloon-purple-clone .header_text__h .header_text__h2 .header_text__p .header_text__polosa .header_text__polosa-vertical{
+    will-change: transform;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    color:#fff;
+    font-weight: 700;
+    height: 500vh;
+    background: linear-gradient(180deg, #000 0%, #000 50%, #000 100%);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+:root{
+    --index: calc(1vw + 1vh);
+}
+
+
+.math{
+    position: absolute;
+    top:0;
+    height:100vh;
+    width:100%;
+    z-index:999;
+    position: fixed;
+}
+
+.start__white{
+    position: fixed;
+    height:100vh;
+    width:100%;
+    background-color:#fff;
+    z-index:100;
+    margin-left:0;
+    animation:start 4s, ease-in-out forwards;
+}
+.start__222{
+    position: fixed;
+    height:100vh;
+    width:100%;
+    background-color:#222222;
+    z-index:90;
+}
+
+
+.header__osnova{
+    height: 100vh;
+    width:100%;
+    background: linear-gradient(180deg, rgba(12, 194, 255, 0.90) 0%, rgba(125, 223, 255, 0.78) 41.67%, #A8E9FF 100%, #94DFF9 100%);
+    box-shadow: inset 0 0 250px rgba(1, 72, 95,0.8);
+    position: fixed;
+}
+.content{
+    height:500vh;
+}
+.header__osnova_items{
+    height:80vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+    
+}
+.header__text{
+    text-align: center;
+    height:calc(var(--index)*5);
+    
+    
+}
+.header_text__h{
+    font-size:calc(var(--index)*3);
+    font-family: 'Playfair Display', serif;
+    opacity:0;
+}
+.header_text__h2{
+    font-size:calc(var(--index)*2.2);
+    font-family: 'Playfair Display', serif;
+    margin-top:calc(var(--index)* -1.35);
+    opacity:0;
+}
+.header_text__polosa{
+    width:calc(var(--index)* 0);
+    height:calc(var(--index)* .1);
+    background-color: #fff;
+    border-radius:3px;
+    opacity:0;
+    margin: 0% auto;
+    transform: translate(50%,-50%);
+}
+.header_text__polosa-vertical{
+    height: calc(var(--index)* 0);
+    width:calc(var(--index)* .07);
+    background-color: #fff;
+    margin-left:50%;
+    border-radius:3px;
+    margin:5% 0px 2% 50%;
+    opacity:0;
+}
+
+.header_text__p{
+    font-size:calc(var(--index)*.7);
+    letter-spacing: calc(var(--index)/5);
+    padding-top:calc(var(--index)*.7);
+    font-weight: 700;
+    opacity:0;
+    max-width:calc(var(--index)*15);
+    margin:0 auto;
+}
+.header_text__button{
+    font-weight: 700;
+    opacity:0;
+    font-size:calc(var(--index)*.7);
+}
+
+
+.header_img___balloon-blue{
+    width: calc(var(--index)*15);
+    position: absolute;
+    top: 0;
+    left: calc(var(--index)*2);
+    animation: balloon_blue 4s ease-in-out forwards;
+    animation-delay: 4s;
+    will-change: transform;
+}
+.header_img___balloon-blue-clone{
+    width: calc(var(--index)*15);
+    position: absolute;
+    top:5%;
+    left:3%;
+    filter: blur(12px);
+    display: none;
+    will-change: transform;
+
+}
+.header_img___balloon-purple{
+    position: absolute;
+    width: calc(var(--index)*10.5);
+    animation: balloon_purple 4s ease-in-out forwards;
+    animation-delay: 4s;
+    will-change: transform;
+}
+.header_img___balloon-purple-clone{
+    position: absolute;
+    width: calc(var(--index)*10.5);
+    bottom:3%;
+    right:12%;
+    opacity: 0.6;
+    filter: blur(20px);
+    will-change: transform;
+    display: none;
+    
+}
+.header_img__sun{
+    position: absolute;
+    width: calc(var(--index)*11);
+    height:calc(var(--index)*11);
+    top: calc(var(--index)*-4);
+    right:calc(var(--index)*-4);
+    animation: sun 4s ease-in-out forwards;
+    animation-delay: 4s;
+}
+.header_img__sun-clone{
+    position: absolute;
+    width: calc(var(--index)*11);
+    height:calc(var(--index)*11);
+    top: calc(var(--index)*-4);
+    right:calc(var(--index)*-4);
+    filter: blur(20px);
+    display: none;
+}
+.header_shkala{
+    width:0vw;
+    height:calc(var(--index)*.5);
+    background-color: #fff;
+    opacity:.2;
+    position:absolute;
+    top:0;
+    z-index:5;
+    left:50%;
+    transform: translate(-50%);
+    border-radius:calc(var(--index)*.4);
+}
+
+
+
+
+
+
+/*COULS------------------------------------------------------*/
+.clouds_left0{
+    position: absolute;
+    left:calc(var(--index)*19);
+    bottom:calc(var(--index)*1);
+    filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
+    width:calc(var(--index)*20);
+}
+.clouds_left1{
+    position: absolute;
+    left:calc(var(--index)*6);
+    filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
+    bottom:calc(var(--index)/3);
+    width:calc(var(--index)*25);
+}
+.clouds_left2{
+    position: absolute;
+    left:calc(var(--index)*7);
+    bottom:calc(var(--index)*4);
+    filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index:-1;
+    width:calc(var(--index)*10);
+}
+.clouds_left4{
+    position: absolute;
+    left:calc(var(--index)*-3);
+    bottom:calc(var(--index)*1);
+    filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
+    width:calc(var(--index)*17);
+}
+.clouds_left5{
+    position: absolute;
+    left:calc(var(--index)*1.5);
+    bottom:calc(var(--index)*7);
+    filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
+    width:calc(var(--index)*4);
+}
+
+
+
+
+.clouds_right0{
+    position: absolute;
+    right:calc(var(--index)*14);
+    bottom:calc(var(--index)*.3);
+    filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
+    width:calc(var(--index)*26);
+}
+.clouds_right1{
+    position: absolute;
+    right:calc(var(--index)*-4);
+    bottom:calc(var(--index)*-1);
+    filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index:1;
+    transform: rotate(10deg);
+    width:calc(var(--index)*29);
+}
+.clouds_right2{
+    position: absolute;
+    right:calc(var(--index)*15);
+    bottom:calc(var(--index)*-.4);
+    filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index:2;
+    width:calc(var(--index)*18);
+}
+.clouds_right4{
+    position: absolute;
+    right:calc(var(--index)*25);
+    bottom:calc(var(--index)*12);
+    filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
+    width:calc(var(--index)*5);
+  
+}
+.clouds_right5{
+    position: absolute;
+    right:calc(var(--index)*2);
+    bottom:calc(var(--index)*6);
+    filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
+    width:calc(var(--index)*16);
+    
+}
+.meteors{
+    position: absolute;
+    z-index:-2;
+}
+
+.header_img__meteor-white0{
+    transform: rotate(-20deg);
+    height: calc(var(--index)*30);
+}
+.header_img__meteor-white1{
+    height: calc(var(--index)*21);
+    left:calc(var(--index)*20);
+}
+.header_img__meteor-white2{
+    height: calc(var(--index)*36);
+    transform: rotate(-50deg);
+    right: calc(var(--index)*-1);
+    top:calc(var(--index)*-4);
+    
+}
+.header_img__meteor-yellow0{
+    right: calc(var(--index)*6);
+    height: calc(var(--index)*30);
+}
+.header_img__meteor-yellow1{
+    left: calc(var(--index)*-10);
+    transform: rotate(20deg);
+    height: calc(var(--index)*30);
+}
+/*COULS--END-------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*PLANETS---------------------------------------------------------------*/
+article{
+    height:100vh;
+    width:100%;
+    position:fixed;
+
+}
+.article__planets_0{
+    position: absolute;
+    width: calc(var(--index)*6.6);
+    top:calc(var(--index)*5.33);
+    left: calc(var(--index)*35.4);
+    z-index:20;
+}
+.article__planets_1{
+    position: absolute;
+    width: calc(var(--index)*3);
+    top:calc(var(--index)*4);
+    left: calc(var(--index)*31.1);
+    z-index:20;
+    
+}
+
+.article__planets_2{
+    position: absolute;
+    width: calc(var(--index)*3.5);
+    top:calc(var(--index)*10);
+    left: calc(var(--index)*44.1);
+    z-index:20;
+    
+}
+.article__planets_3{
+    position: absolute;
+    width: calc(var(--index)*3.7);
+    top:calc(var(--index)*11.5);
+    left: calc(var(--index)*23.5);
+    z-index:20;
+    
+}
+.article__planets_4{
+    position: absolute;
+    width: calc(var(--index)*2.6);
+    top:calc(var(--index)*18);
+    left: calc(var(--index)*39.8);
+    z-index:20;
+    
+}
+.article__planets_5{
+    position: absolute;
+    width: calc(var(--index)*6);
+    top:calc(var(--index)*21.4);
+    left: calc(var(--index)*25.25);
+    z-index:20;
+    
+}
+.article__planets_6{
+    position: absolute;
+    width: calc(var(--index)*8);
+    top:calc(var(--index)*21);
+    left: calc(var(--index)*46.2);
+    z-index:20;
+    
+}
+.article__planets_7{
+    position: absolute;
+    width: calc(var(--index)*7);
+    top:calc(var(--index)*2);
+    left: calc(var(--index)*9.8);
+    z-index:20;
+    
+}
+.article__planets{
+    display: none;
+}
+
+
+
+
+.article__thread-0{
+    position: absolute;
+    height:calc(var(--index)*24);
+    width:calc(var(--index)*.02);
+    background-color: #8D7A7A;
+    left: calc(var(--index)*38.7);
+    top:calc(var(--index)*-15);
+}
+.article__thread-1{
+    position: absolute;
+    height:calc(var(--index)*24);
+    width:calc(var(--index)*.02);
+    background-color: #8D7A7A;
+    left: calc(var(--index)*32.9);
+    top:calc(var(--index)*-18);
+}
+.article__thread-2{
+    position: absolute;
+    height:calc(var(--index)*24);
+    width:calc(var(--index)*.02);
+    background-color: #8D7A7A;
+    left: calc(var(--index)*45.3);
+    top:calc(var(--index)*-12);
+}
+.article__thread-3{
+    position: absolute;
+    height:calc(var(--index)*33);
+    width:calc(var(--index)*.02);
+    background-color: #8D7A7A;
+    left: calc(var(--index)*25.48);
+    top:calc(var(--index)*-20);
+}
+.article__thread-4{
+    position: absolute;
+    height:calc(var(--index)*44);
+    width:calc(var(--index)*.02);
+    background-color: #8D7A7A;
+    left: calc(var(--index)*41.4);
+    top:calc(var(--index)*-24);
+}
+.article__thread-5{
+    position: absolute;
+    height:calc(var(--index)*60);
+    width:calc(var(--index)*.04);
+    background-color: #8D7A7A;
+    left: calc(var(--index)*27.9);
+    top: calc(var(--index)*-34);
+}
+.article__thread-6{
+    position: absolute;
+    height:calc(var(--index)*26);
+    width:calc(var(--index)*.02);
+    background-color: #8D7A7A;
+    left: calc(var(--index)*50.75);
+    top:calc(var(--index)*-2);
+}
+.article__thread-7{
+    position: absolute;
+    height:calc(var(--index)*24);
+    width:calc(var(--index)*.02);
+    background-color: #8D7A7A;
+    left: calc(var(--index)*13.5);
+    top:calc(var(--index)*-20);
+}
+
+
+
+
+.article__cardboard-roket{
+    position: absolute;
+    bottom:calc(var(--index)*-5);
+    left: calc(var(--index)*52);
+    height:calc(var(--index)*15);
+    opacity:.4;
+
+
+}
+.article__cardboard-nlo{
+    position: absolute;
+    height:calc(var(--index)*15);
+    top:calc(var(--index)*12);
+    left:calc(var(--index)*-7);
+    opacity:.6;
+    
+
+}
+
+
+.article__block0,.article__block1,.article__block2,.article__block3,.article__block4,.article__block5,.article__block6,.article__block7{
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: calc(var(--index)*12);
+    height: calc(var(--index)*13);
+    background: rgba(217, 217, 217, 0.20);
+    backdrop-filter: blur(27.5px);
+    border-radius:8px;
+    z-index:30;
+    opacity:0;
+    
+}
+.article__block-h1{
+    text-align: center;
+    font-size:calc(var(--index)*1.33);
+    font-weight: 500;
+    padding:0px;
+    margin: 0px;
+    line-height: .85em;
+}
+.article__block-h2{
+    font-size:calc(var(--index)*1.1);
+    font-weight: 500;
+    padding:0px;
+    margin: 0px;
+    margin-top:calc(var(--index)*6);
+    margin-left:.8vw;
+}
+.article__block-polosa{
+    width:100%;
+    height:calc(var(--index)/15);
+    background-color: #fff;
+}
+.article__block-p{
+    font-size:calc(var(--index)/2);
+    max-width:calc(var(--index)*10) ;
+    margin:.6vw 0 0 .8vw;
+    font-weight:700;
+
+    
+}
+.article__blocks .one{
+    margin-top: calc(var(--index)*.5);
+}
+
+/*PLANETS--END-------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*BLUR-------------------------------------------------------------------*/
+.article__beck-rg{
+    position: absolute;
+    bottom:calc(var(--index)*-3);
+    right:calc(var(--index)*-10);
+    opacity:0;
+    width: calc(var(--index)*45);
+    z-index:-2;
+}
+.article__beck-lf{
+    position: absolute;
+    top:calc(var(--index)*-12);
+    left: calc(var(--index)*-8);
+    opacity:0;
+    width: calc(var(--index)*33);
+    z-index:-2;
+}
+
+.article_block-blur{
+    position: absolute;
+    left: calc(50% - calc(var(--index) *2.5));
+    top:  calc(var(--index)*3);
+    width: calc(var(--index)*5);
+    height: calc(var(--index)*5);
+    filter: blur(calc(var(--index)*2.5));
+    z-index:-1;
+}
+.article__blur0{background-color:#FDC613;}
+.article__blur1{background-color:#Fff;}
+.article__blur2{background-color:#E1C5AE;}
+.article__blur3{background-color:#666EBF;}
+.article__blur4{background-color:#BC4F22;}
+.article__blur5{background-color:#E95E3E;}
+.article__blur6{background-color:#F7D7A5;}
+.article__blur7{background-color:#377B92;}
+
+.article_block_1-blur{
+    position: absolute;
+    left: calc(50% - calc(var(--index) *2.5));
+    top:  calc(var(--index)*3);
+    width: calc(var(--index)*5);
+    height: calc(var(--index)*5);
+    background-color:#Fff;
+    filter: blur(calc(var(--index)*2.5));
+    z-index:-1;
+}
+
+.header_blur__sun{
+    width: calc(var(--index)*35);
+    height: calc(var(--index)*35);
+    border-radius: calc(var(--index)*31);
+    background:rgba(224, 183, 35, 1);
+    filter: blur(calc(var(--index)*15));
+    position: absolute;
+    top: calc(var(--index)*-12);
+    right: calc(var(--index)*-9);
+    z-index:-1;
+    opacity:0;
+}
+.article__planets_0-blur{
+    position: absolute;
+    width: calc(var(--index)*5.6);
+    top:calc(var(--index)*5.33);
+    left: calc(var(--index)*35.4);
+    height: calc(var(--index)*5.6);
+    background-color:#FDC613;
+    filter: blur(calc(var(--index)*5.3));
+    opacity:0;
+  }
+.article__planets_1-blur{
+    position: absolute;
+    width: calc(var(--index)*3);
+    top:calc(var(--index)*4);
+    left: calc(var(--index)*31.1);
+    height: calc(var(--index)*3);
+    background-color:#fff;
+    filter: blur(calc(var(--index)*3.3));
+    opacity:0;
+  }
+.article__planets_2-blur{
+    position: absolute;
+    width: calc(var(--index)*3.5);
+    top:calc(var(--index)*10);
+    left: calc(var(--index)*44.1);
+    height: calc(var(--index)*3.5);
+    background-color:#E1C5AE;
+    filter: blur(calc(var(--index)*3.3));
+    opacity:0;
+  }
+.article__planets_3-blur{
+    position: absolute;
+    width: calc(var(--index)*3.7);
+    height: calc(var(--index)*3.7);
+    top:calc(var(--index)*11.5);
+    left: calc(var(--index)*23.5);
+    background-color:#666EBF;
+    filter: blur(calc(var(--index)*3.3));
+    opacity:0;
+  }
+  .article__planets_4-blur{
+    position: absolute;
+    width: calc(var(--index)*2.6);
+    top:calc(var(--index)*18);
+    left: calc(var(--index)*39.8);
+    height: calc(var(--index)*2.6);
+    background-color:#BC4F22;
+    filter: blur(calc(var(--index)*2.3));
+    opacity:0;
+  }
+  .article__planets_5-blur{
+    position: absolute;
+    width: calc(var(--index)*6);
+    top:calc(var(--index)*21.4);
+    left: calc(var(--index)*25.25);
+    height: calc(var(--index)*6);
+    background-color:#E95E3E;
+    filter: blur(calc(var(--index)*6));
+    opacity:0;
+  }
+  .article__planets_6-blur{
+    position: absolute;
+    width: calc(var(--index)*6);
+    top:calc(var(--index)*21);
+    left: calc(var(--index)*46.2);
+    height: calc(var(--index)*6);
+    background-color:#F3D396;
+    filter: blur(calc(var(--index)*5));
+    opacity:0;
+  }
+  .article__planets_7-blur{
+    position: absolute;
+    width: calc(var(--index)*7);
+    top:calc(var(--index)*2);
+    left: calc(var(--index)*9.8);
+    height: calc(var(--index)*7);
+    background-color:#377B92;
+    filter: blur(calc(var(--index)*3.3));
+    opacity:0;
+  }
+/*BLUR__END--------------------------------------------------------------*/
+
+
+
+
+
+
+
+footer{
+    position: fixed;
+    bottom:calc(var(--index)*1.5);
+    left:calc(var(--index)*4);
+    
+
+}
+.footer__div{
+    display: flex;
+    opacity:0
+    
+}
+.footer_boter{
+    margin-right:calc(var(--index)*3);
+    font-size: calc(var(--index)/1.5);
+}
+
+
+
+
+
+/*animations------------------------------------------------------------*/
+@keyframes balloon_blue{
+    0%{
+        transform: rotate(10deg);
+        left: -25%;
+        top:0%;
+        filter: blur(2px);
+      }
+      30% {
+        transform: rotate(-45deg);
+        left: 3%;
+      }
+      70% {
+        transform: rotate(5deg);
+        left: 0%;
+      }
+      100%{
+          transform: rotate(0deg);
+          top:5%;
+          left:3%;
+          filter: blur(12px);
+      }
+
+}
+@keyframes balloon_purple {
+    0%{
+      transform: rotate(10deg);
+      bottom:0%;
+      right:-14%;
+      opacity: 1;
+      filter: blur(2px);
+    }
+    40% {
+      transform: rotate(35deg);
+      bottom:5%;
+      right:15%;
+      opacity: 0.6;
+    }
+    80% {
+      transform: rotate(5deg);
+      right:11%;
+      opacity: 0.6;
+    }
+    100%{
+        transform: rotate(0deg);
+        bottom:3%;
+      right:12%;
+      opacity: 0.6;
+      filter: blur(20px);
+  
+        
+    }
+  }
+@keyframes sun{
+    0%{
+        top: calc(var(--index)*-14);
+        right:calc(var(--index)*-14);
+        filter: blur(6px);
+    }
+    30%{
+        top: calc(var(--index)*-2.8);
+        right:calc(var(--index)*-2.8);
+    }
+    100%{
+        top: calc(var(--index)*-4);
+        right:calc(var(--index)*-4);
+        filter: blur(20px);
+    }
+
+}
+
+@keyframes start{
+    0%{
+        margin-left:-600%;
+    }
+    100%{
+        margin-left:0;
+    }
+
+}
+/*animationsEND--------------------------------------------------------------*/
